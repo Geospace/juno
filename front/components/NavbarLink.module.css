@@ -1,0 +1,7 @@
+.link a {
+  color: var(--faded);
+}
+
+.link a:hover {
+  color: black;
+}

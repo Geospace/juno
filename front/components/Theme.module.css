@@ -1,0 +1,8 @@
+.theme {
+  --faded: #aaa;
+}
+
+.theme a {
+  text-decoration: none;
+  transition: color 0.5s;
+}
