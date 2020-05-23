@@ -18,7 +18,8 @@ const ArticleEntryCard = ({ entry }: Props): JSX.Element => (
         </Link>
       </h2>
       <p className={style.meta}>
-        domain.com <BsDot /> 5 minutes
+        {entry.source} <BsDot /> {entry.readTime} minute
+        {entry.readTime > 1 && 's'}
       </p>
       <p className={style.excerpt}>{entry.excerpt}</p>
     </div>

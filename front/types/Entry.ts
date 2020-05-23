@@ -3,4 +3,5 @@ export default interface Entry {
   excerpt: string;
   category: string;
   readTime: number;
+  source: string;
 }

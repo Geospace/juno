@@ -1,23 +1,20 @@
 import { loremIpsum } from 'lorem-ipsum';
 
 import RegularLayout from '../displays/RegularLayout';
-import ArticleEntryCard from '../components/ArticleEntryCard';
 import SideToolBar from '../displays/SideToolBar';
+import Entry from '../types/Entry';
+import ArticlesListing from '../components/ArticlesListing';
 
-const entries: Array<JSX.Element> = [];
+// This is fake data and shall be removed
+const entries: Array<Entry> = [];
 for (let i = 0; i < 4; i += 1) {
-  entries.push(
-    <div key={i} style={{ margin: '0 0 2.5em 0' }}>
-      <ArticleEntryCard
-        entry={{
-          title: loremIpsum({ sentenceUpperBound: 7 }).replace('.', ''),
-          excerpt: loremIpsum({ count: 4 }),
-          category: loremIpsum({ count: 1, units: 'words' }),
-          readTime: 1 + Math.floor(Math.random() * 10),
-        }}
-      />
-    </div>
-  );
+  entries.push({
+    title: loremIpsum({ sentenceUpperBound: 7 }).replace('.', ''),
+    excerpt: loremIpsum({ count: 4 }),
+    category: loremIpsum({ count: 1, units: 'words' }),
+    readTime: 1 + Math.floor(Math.random() * 10),
+    source: `${loremIpsum({ count: 1, units: 'words' })}.com`,
+  });
 }
 
 const Index = (): JSX.Element => (
@@ -25,7 +22,9 @@ const Index = (): JSX.Element => (
     <div style={{ width: '25%', float: 'left' }}>
       <SideToolBar />
     </div>
-    <div style={{ width: '75%', float: 'left' }}>{entries}</div>
+    <div style={{ width: '75%', float: 'left' }}>
+      <ArticlesListing entries={entries} />
+    </div>
     <div style={{ clear: 'both' }} />
   </RegularLayout>
 );
