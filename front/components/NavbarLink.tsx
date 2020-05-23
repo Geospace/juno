@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import styles from './NavbarLink.module.css';
+import style from './NavbarLink.module.css';
 
 interface Props {
   children: string;
@@ -8,11 +8,11 @@ interface Props {
 }
 
 const NavbarLink = ({ children, to }: Props): JSX.Element => (
-  <span className={styles.link}>
+  <li className={style.link}>
     <Link href={to}>
       <a>{children}</a>
     </Link>
-  </span>
+  </li>
 );
 
 export default NavbarLink;

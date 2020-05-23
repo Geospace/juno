@@ -1,5 +1,10 @@
+.link {
+  display: inline;
+  margin-left: 1.2em;
+}
+
 .link a {
-  color: var(--faded);
+  color: var(--color-faded);
 }
 
 .link a:hover {

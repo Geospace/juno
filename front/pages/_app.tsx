@@ -1,6 +1,7 @@
 import React from 'react';
 import App from 'next/app';
 
+import 'normalize.css';
 import Theme from '../components/Theme';
 
 class MyApp extends App {

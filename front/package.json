@@ -7,9 +7,12 @@
     "lint": "eslint . --ext .tsx"
   },
   "dependencies": {
+    "lorem-ipsum": "^2.0.3",
     "next": "^9.4.1",
+    "normalize.css": "^8.0.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0"
   },
   "devDependencies": {
     "@types/node": "^14.0.4",

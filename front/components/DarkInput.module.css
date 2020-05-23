@@ -1,0 +1,20 @@
+.label {
+  display: flex;
+  vertical-align: center;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.4em;
+  max-width: 75%;
+}
+
+.label svg {
+  margin-right: 0.3em;
+}
+
+.label input {
+  font-size: 0.8em;
+}
+
+.label input:focus {
+  outline: none;
+}

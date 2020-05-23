@@ -1,8 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700;900&display=swap');
+
 .theme {
-  --faded: #aaa;
+  --color-logo: #000;
+  --color-primary: #f44336;
+  --color-default: #222;
+  --color-gray: #555;
+  --color-faded: #aaa;
+
+  --font-logo: 'Abril Fatface', cursive;
+  --font-content: 'Roboto Slab', serif;
+
+  --size-content: 1.1em;
+}
+
+.theme {
+  font-family: var(--font-content);
+  font-size: var(--size-content);
+  color: var(--color-default);
 }
 
 .theme a {
   text-decoration: none;
-  transition: color 0.5s;
+  color: var(--color-default);
+  transition: color 0.3s;
+}
+
+.theme p {
+  line-height: 1.4em;
 }
