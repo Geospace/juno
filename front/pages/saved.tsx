@@ -1,4 +1,4 @@
-import RegularLayout from '../components/RegularLayout';
+import RegularLayout from '../displays/RegularLayout';
 
 const Saved = (): JSX.Element => (
   <RegularLayout>

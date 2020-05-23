@@ -2,7 +2,7 @@ import React from 'react';
 import App from 'next/app';
 
 import 'normalize.css';
-import Theme from '../components/Theme';
+import Theme from '../displays/Theme';
 
 class MyApp extends App {
   render(): JSX.Element {

@@ -9,10 +9,7 @@ interface Props {
 const DarkInput = ({ text }: Props): JSX.Element => (
   <label className={style.label}>
     <GrFormSearch />
-    <input
-      style={{ background: 'transparent', border: '0' }}
-      placeholder={text}
-    />
+    <input placeholder={text} />
   </label>
 );
 

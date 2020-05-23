@@ -1,6 +1,5 @@
 .link {
   display: inline;
-  margin-left: 1.2em;
 }
 
 .link a {
@@ -8,5 +7,5 @@
 }
 
 .link a:hover {
-  color: black;
+  color: var(--color-logo);
 }

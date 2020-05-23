@@ -1,8 +1,8 @@
 import { loremIpsum } from 'lorem-ipsum';
 
-import RegularLayout from '../components/RegularLayout';
+import RegularLayout from '../displays/RegularLayout';
 import ArticleEntryCard from '../components/ArticleEntryCard';
-import SideToolBar from '../components/SideToolBar';
+import SideToolBar from '../displays/SideToolBar';
 
 const entries: Array<JSX.Element> = [];
 for (let i = 0; i < 4; i += 1) {

@@ -7,8 +7,12 @@ interface Props {
 }
 
 const SideWidget = ({ title, children }: Props): JSX.Element => (
-  <div className={style.widget}>
-    {title && <SideTitle title={title} />}
+  <div>
+    {title && (
+      <div className={style.title}>
+        <SideTitle title={title} />
+      </div>
+    )}
     {children}
   </div>
 );

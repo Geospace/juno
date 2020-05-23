@@ -1,4 +1,4 @@
-import SiteLogo from './SiteLogo';
+import SiteLogo from '../components/SiteLogo';
 
 import style from './Footer.module.css';
 

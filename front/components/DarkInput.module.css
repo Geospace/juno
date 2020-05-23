@@ -1,10 +1,9 @@
 .label {
   display: flex;
-  vertical-align: center;
+  align-items: center;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: var(--color-highlight);
   padding: 0.4em;
-  max-width: 75%;
 }
 
 .label svg {
@@ -13,6 +12,8 @@
 
 .label input {
   font-size: 0.8em;
+  background: transparent;
+  border: 0;
 }
 
 .label input:focus {
