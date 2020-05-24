@@ -22,7 +22,7 @@ const Index = (): JSX.Element => (
     <div style={{ width: '25%', float: 'left' }}>
       <SideToolBar />
     </div>
-    <div style={{ width: '75%', float: 'left' }}>
+    <div style={{ width: '70%', float: 'left', marginLeft: '5%' }}>
       <ArticlesListing entries={entries} />
     </div>
     <div style={{ clear: 'both' }} />

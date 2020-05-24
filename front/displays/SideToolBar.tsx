@@ -8,7 +8,7 @@ const SideToolBar = (): JSX.Element => (
     <div style={{ marginTop: '0.3em' }} />
 
     <SideWidget title="search">
-      <div style={{ maxWidth: '80%' }}>
+      <div>
         <DarkInput text="Enter keywords" />
       </div>
     </SideWidget>
