@@ -10,6 +10,10 @@
   margin-right: 0.3em;
 }
 
+.label path {
+  opacity: 0.7;
+}
+
 .label input {
   font-size: 0.8em;
   background: transparent;
